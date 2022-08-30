@@ -11,4 +11,4 @@ pls tell me if there are errors.
 There are known errors like going through config files but might've been fixed already. 
 
 please check your work, not sure if it gets everything, but I think it does. 
-Extracts from - public interface *Repository*.java files only
+Extracts from - public interface \*Repository\*.java files only

@@ -193,17 +193,20 @@ def find_parens(s):
 
 def write_to_csv(details, csv_file):
 
-    f=open(csv_file,'a') 
+    f=open(csv_file, 'a', encoding='utf-8') 
     write = csv.writer(f, delimiter ='|')
 
     write.writerows(details)
 
+
 def initial_write_to_csv(fields, csv_file):
     
-    f=open(csv_file,'a') 
+    f=open(csv_file, 'a', encoding='utf-8') 
     write = csv.writer(f, delimiter ='|')
 
+    f.write("sep=|\n")
     write.writerow(fields)
+
 
 def setup_logger():
     fn = "repo-query-extractor" + dt + ".log"
